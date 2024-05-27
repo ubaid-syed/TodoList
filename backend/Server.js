@@ -18,6 +18,10 @@ mongoose
 
 app.use(routes);
 
+app.get("/new", (req, res) => {
+  res.send("hello world");
+});
+
 app.listen(PORT, () => {
   console.log(`Listening on: ${PORT}`);
 });
